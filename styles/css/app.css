@@ -1526,6 +1526,9 @@ base::-moz-progress-bar,
 .fokuspokus {
   background: #FFD504; }
 
+.adria {
+  background: #414141; }
+
 .project .meteo:hover > .desktop {
   margin: 0 auto 0 auto;
   box-shadow: 0; }
