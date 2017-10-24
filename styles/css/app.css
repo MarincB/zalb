@@ -1442,6 +1442,8 @@ base::-moz-progress-bar,
    -------------------------------------------------------- */
 .project {
   margin-bottom: 80px; }
+  .project a:hover {
+    text-decoration: none; }
 
 .project-card {
   box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
@@ -1449,8 +1451,8 @@ base::-moz-progress-bar,
   -webkit-transition: all 0.5s ease;
   max-height: 65vh;
   overflow-y: hidden; }
-  .project-card a:hover {
-    text-decoration: none; }
+  .project-card :hover {
+    color: rgba(0, 0, 0, 0.15); }
 
 .desktop {
   margin: 50px 0 0 0;

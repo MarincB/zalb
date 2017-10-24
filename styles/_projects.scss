@@ -1,6 +1,11 @@
 
 .project{
 	margin-bottom: 80px;
+
+	a:hover{
+		text-decoration: none;
+	}
+
 }
 
 .project-card{
@@ -10,8 +15,10 @@
 	max-height: 65vh;
 	overflow-y: hidden;
 
-	a:hover{
-		text-decoration: none;
+	:hover{
+	color: rgba(0,0,0,0.15);
+
+
 	}
 
 }
