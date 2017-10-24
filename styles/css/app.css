@@ -1283,6 +1283,154 @@ output {
 /* --------------------------------------------------------
    Components
    -------------------------------------------------------- */
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear; }
+  .fade.in {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition-timing-function: ease;
+  transition-duration: .35s;
+  transition-property: height; }
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0; }
+  to {
+    background-position: 0 0; } }
+.progress {
+  display: block;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: 1rem; }
+
+.progress[value] {
+  background-color: #eee;
+  border: 0;
+  appearance: none;
+  border-radius: 0.25rem; }
+
+.progress[value]::-ms-fill {
+  background-color: #0074d9;
+  border: 0; }
+
+.progress[value]::-moz-progress-bar {
+  background-color: #0074d9;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem; }
+
+.progress[value]::-webkit-progress-value {
+  background-color: #0074d9;
+  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0.25rem; }
+
+.progress[value="100"]::-moz-progress-bar {
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; }
+
+.progress[value="100"]::-webkit-progress-value {
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; }
+
+.progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 0.25rem; }
+
+base::-moz-progress-bar,
+.progress[value] {
+  background-color: #eee;
+  border-radius: 0.25rem; }
+
+@media screen and (min-width: 0\0) {
+  .progress {
+    background-color: #eee;
+    border-radius: 0.25rem; }
+
+  .progress-bar {
+    display: inline-block;
+    height: 1rem;
+    text-indent: -999rem;
+    background-color: #0074d9;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem; }
+
+  .progress[width="100%"] {
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; } }
+.progress-striped[value]::-webkit-progress-value {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem; }
+
+.progress-striped[value]::-moz-progress-bar {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem; }
+
+.progress-striped[value]::-ms-fill {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem; }
+
+@media screen and (min-width: 0\0) {
+  .progress-bar-striped {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem; } }
+.progress-animated[value]::-webkit-progress-value {
+  animation: progress-bar-stripes 2s linear infinite; }
+
+.progress-animated[value]::-moz-progress-bar {
+  animation: progress-bar-stripes 2s linear infinite; }
+
+@media screen and (min-width: 0\0) {
+  .progress-animated .progress-bar-striped {
+    animation: progress-bar-stripes 2s linear infinite; } }
+.progress-success[value]::-webkit-progress-value {
+  background-color: #5cb85c; }
+.progress-success[value]::-moz-progress-bar {
+  background-color: #5cb85c; }
+.progress-success[value]::-ms-fill {
+  background-color: #5cb85c; }
+@media screen and (min-width: 0\0) {
+  .progress-success .progress-bar {
+    background-color: #5cb85c; } }
+
+.progress-info[value]::-webkit-progress-value {
+  background-color: #5bc0de; }
+.progress-info[value]::-moz-progress-bar {
+  background-color: #5bc0de; }
+.progress-info[value]::-ms-fill {
+  background-color: #5bc0de; }
+@media screen and (min-width: 0\0) {
+  .progress-info .progress-bar {
+    background-color: #5bc0de; } }
+
+.progress-warning[value]::-webkit-progress-value {
+  background-color: #f0ad4e; }
+.progress-warning[value]::-moz-progress-bar {
+  background-color: #f0ad4e; }
+.progress-warning[value]::-ms-fill {
+  background-color: #f0ad4e; }
+@media screen and (min-width: 0\0) {
+  .progress-warning .progress-bar {
+    background-color: #f0ad4e; } }
+
+.progress-danger[value]::-webkit-progress-value {
+  background-color: #d9534f; }
+.progress-danger[value]::-moz-progress-bar {
+  background-color: #d9534f; }
+.progress-danger[value]::-ms-fill {
+  background-color: #d9534f; }
+@media screen and (min-width: 0\0) {
+  .progress-danger .progress-bar {
+    background-color: #d9534f; } }
+
 /* --------------------------------------------------------
    Components w/ JavaScript
    -------------------------------------------------------- */
@@ -1292,16 +1440,207 @@ output {
 /* --------------------------------------------------------
    Custom application specific styles
    -------------------------------------------------------- */
+.project {
+  margin-bottom: 80px; }
+
+.project-card {
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  padding: 0 50px;
+  -webkit-transition: all 0.5s ease;
+  max-height: 65vh;
+  overflow-y: hidden; }
+  .project-card a:hover {
+    text-decoration: none; }
+
+.desktop {
+  margin: 50px 0 0 0;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.3);
+  border-radius: 4px 4px 0 0;
+  -webkit-transition: all 0.5s ease; }
+  .desktop header {
+    width: 100%;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px 4px 0 0; }
+    .desktop header .dots {
+      margin-left: 8px; }
+      .desktop header .dots span {
+        background: rgba(255, 255, 255, 0.2);
+        height: 8px;
+        width: 8px;
+        border-radius: 20px;
+        margin: 0 0 2px 0px;
+        display: inline-block; }
+  .desktop img {
+    height: auto;
+    width: 100%; }
+
+.mobile {
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease;
+  width: 280px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  margin: 50px auto 0 auto; }
+  .mobile header {
+    width: 100%;
+    height: 50px; }
+    .mobile header .microphone {
+      margin: 0 auto;
+      width: 60px; }
+      .mobile header .microphone .camera {
+        background: rgba(255, 255, 255, 0.4);
+        height: 10px;
+        width: 10px;
+        border-radius: 20px;
+        margin: 20px 0 2px 0px;
+        display: inline-block; }
+      .mobile header .microphone .speaker {
+        background: rgba(255, 255, 255, 0.4);
+        height: 5px;
+        width: 40px;
+        border-radius: 20px;
+        margin: 0 0 5px 0px;
+        display: inline-block; }
+  .mobile img {
+    height: auto;
+    width: 100%;
+    padding: 0 3%; }
+  .mobile footer {
+    width: 100%;
+    height: 20px;
+    border-radius: 0 0 4px 4px; }
+    .mobile footer .home-button {
+      background: rgba(255, 255, 255, 0.2);
+      height: 15px;
+      width: 15px;
+      border-radius: 20px;
+      display: block;
+      margin: 5px auto 0 auto; }
+
+.meteo {
+  background: #0082bc; }
+
+.fokuspokus {
+  background: #FFD504; }
+
+.project .meteo:hover > .desktop {
+  margin: 0 auto 0 auto;
+  box-shadow: 0; }
+.project .fokuspokus:hover > .mobile {
+  margin: 0 auto 0 auto; }
+
+.single-project-card {
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  padding: 0 100px;
+  max-height: 65vh;
+  overflow-y: hidden; }
+
+.title-section {
+  margin-bottom: 50px; }
+
+.image img {
+  margin: 50px 0 30px 0;
+  width: 100%; }
+
+.comparison .desktop {
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Bree Serif', Georgia, serif;
+  font-family: 'Rubik', sans-serif;
   color: #181818; }
 
-h1 {
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 1.2; }
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200; }
 
-.about {
-  margin-top: 50px; }
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.4; }
+
+.card-title {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.08);
+  vertical-align: text-top;
+  line-height: 60px;
+  margin: 0 0 20px 0; }
+
+h3 {
+  margin-bottom: 0; }
+
+p {
+  font-size: 16px;
+  max-width: 650px; }
+
+.text {
+  margin: 50px auto 0 auto;
+  max-width: 750px; }
+
+.caption {
+  font-size: 14px;
+  margin: 10px 0 0 0px;
+  color: #8e8e8e; }
+
+.lead {
+  font-size: 1.5rem; }
+
+ul {
+  padding: 0; }
+  ul li {
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 18px; }
+    ul li .active {
+      color: #181818; }
+    ul li a {
+      color: #cacaca;
+      font-weight: 100;
+      -webkit-transition: all 0.4s ease; }
+    ul li a:hover {
+      color: #181818;
+      text-decoration: none; }
+
+body {
+  background: #fefefe; }
+
+.wrapper {
+  padding: 50px; }
+
+.container {
+  margin-left: 195px; }
+
+.sidebar {
+  width: 20%;
+  float: left;
+  position: fixed;
+  top: 50px; }
+
+.project-info {
+  margin-top: 20px; }
+  .project-info p {
+    font-size: 14px; }
+
+.logo {
+  margin-bottom: 80px;
+  height: 40px; }
+  .logo path {
+    fill: #383838; }
+
+.social {
+  fill: #cacaca;
+  position: fixed;
+  bottom: 50px; }
+  .social svg {
+    margin-right: 10px;
+    -webkit-transition: all 0.5s ease; }
+  .social svg:hover {
+    fill: #181818; }
+
+.cocoen {
+  border-radius: 4px; }
 
 /*# sourceMappingURL=app.css.map */

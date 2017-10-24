@@ -1,6 +1,58 @@
 
-
-.about {
-	margin-top: 50px;
+body{
+	background: #fefefe;
 }
+
+
+.wrapper{
+	padding: 50px;
+}
+
+.container{
+	margin-left: 195px;
+}
+
+.sidebar{
+	width: 20%;
+	float: left;
+	position: fixed;
+	top: 50px;
+}
+
+.project-info{
+	margin-top: 20px;
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.logo {
+	margin-bottom: 80px;
+	height: 40px;
+
+	path{
+		fill:#383838;
+	}
+}
+
+.social{
+	fill:#cacaca;
+	position: fixed;
+	bottom: 50px;
+
+	svg{
+		margin-right: 10px;
+		-webkit-transition: all 0.5s ease;
+	}
+
+	svg:hover{
+		fill:#181818;
+	}
+}
+
+.cocoen{
+	border-radius: 4px;
+}
+
 

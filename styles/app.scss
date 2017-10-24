@@ -52,7 +52,7 @@
    Components
    -------------------------------------------------------- */
 
-//@import "../bower_components/bootstrap/scss/animation";
+@import "../bower_components/bootstrap/scss/animation";
 //@import "../bower_components/bootstrap/scss/dropdown";
 //@import "../bower_components/bootstrap/scss/button-group";
 //@import "../bower_components/bootstrap/scss/input-group";
@@ -66,7 +66,7 @@
 //@import "../bower_components/bootstrap/scss/labels";
 //@import "../bower_components/bootstrap/scss/jumbotron";
 //@import "../bower_components/bootstrap/scss/alert";
-//@import "../bower_components/bootstrap/scss/progress";
+@import "../bower_components/bootstrap/scss/progress";
 //@import "../bower_components/bootstrap/scss/media";
 //@import "../bower_components/bootstrap/scss/list-group";
 //@import "../bower_components/bootstrap/scss/responsive-embed";
@@ -99,5 +99,7 @@
 /* --------------------------------------------------------
    Custom application specific styles
    -------------------------------------------------------- */
+@import "projects";
+@import "single-project";
 @import "type";
 @import "base";
