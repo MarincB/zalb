@@ -17,6 +17,15 @@ body{
 	float: left;
 	position: fixed;
 	top: 50px;
+	height: 100%;
+}
+
+.fade{
+	opacity: 0.3;
+}
+
+.fade:hover{
+	opacity: 1;
 }
 
 .project-info{
