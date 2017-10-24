@@ -1451,8 +1451,8 @@ base::-moz-progress-bar,
   -webkit-transition: all 0.5s ease;
   min-height: 400px;
   max-height: 500px;
-  height: 100%;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  width: auto; }
   .project-card :hover {
     color: rgba(0, 0, 0, 0.25); }
 
@@ -1632,7 +1632,8 @@ body {
   padding: 50px; }
 
 .container {
-  margin-left: 195px; }
+  margin-left: 195px;
+  max-width: 1300px; }
 
 .sidebar {
   width: 20%;
