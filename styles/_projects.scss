@@ -12,7 +12,9 @@
 	box-shadow: 0 5px 100px rgba(0,0,0,.2);
 	padding: 0 50px;
 	-webkit-transition: all 0.5s ease;
-	max-height: 65vh;
+	min-height: 400px;
+	max-height: 500px;
+	height:100%;
 	overflow-y: hidden;
 
 	:hover{
@@ -129,6 +131,10 @@
 
 .adria{
 	background: #414141;
+}
+
+.triglav{
+	background: #DD161B;
 }
 
 .project{
