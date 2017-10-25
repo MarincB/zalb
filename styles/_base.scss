@@ -3,9 +3,8 @@ body{
 	background: #fefefe;
 }
 
-
 .wrapper{
-	padding: 50px;
+	margin: 50px;
 }
 
 .container{
@@ -65,4 +64,73 @@ body{
 	border-radius: 4px;
 }
 
+@media all and (max-width: 900px) {
+
+	.wrapper{
+		margin:0;
+	}
+
+	.container{
+		margin-top: 130px;
+		padding-left:5%;
+		padding-right:5%;
+		margin-left: auto;
+	}
+  	
+	.fade{
+	opacity: 1;
+}
+
+
+  	.sidebar{
+  		display: block;
+  		width: 100%;
+  		position: fixed;
+  		z-index:100;
+		padding: 15px calc(15px + 5%);
+		top:0px;
+		background: rgba(254, 254, 254,.98);
+		height: auto;
+
+  		.logo{
+  			margin-bottom: 0;
+  		}
+
+  		ul{
+  			display: inline-block;
+  			margin:0 0 10px 20px;
+  			float:right;
+
+  			li{
+  				display: inline;
+  				margin-left: 20px;
+  			}
+  		}
+  	}
+
+   }
+
+   @media all and (max-width: 480px) {
+
+   		.sidebar{
+   			padding: 15px calc(15px + 5%) 0px calc(15px + 5%);
+   		}
+
+   		.logo{
+   			height: 30px;
+   		}
+
+   		ul{
+  			display: inline-block;
+  			margin:0 0 10px 0px;
+  			float:right;
+
+  			li{
+  				display: inline;
+  				margin-left: 14px;
+  				font-size: 14px;
+  			}
+  		}
+
+   }
 
