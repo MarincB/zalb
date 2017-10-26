@@ -52,6 +52,7 @@ body{
 
 	svg{
 		margin-right: 10px;
+		margin-bottom: -5px;
 		-webkit-transition: all 0.5s ease;
 	}
 
@@ -67,9 +68,28 @@ body{
 
 .hide-desktop{
 	display: none;
+
 }
 
-@media all and (max-width: 900px) {
+@media all and (min-width: 1650px) {
+
+	.container{
+		margin: 0 auto;
+	}
+}
+
+@media all and (min-width: 1281px) {
+
+	.project-card{
+	min-height: 450px;
+	height: 100%;
+	max-height: 600px;
+	}
+}
+
+
+
+@media all and (max-width: 1024px) {
 
 	.wrapper{
 		margin:0;
@@ -115,7 +135,7 @@ body{
 
    }
 
-   @media all and (max-width: 500px) {
+   @media all and (max-width: 600px) {
 
    		.hide-desktop{
 		display: block;
@@ -127,7 +147,7 @@ body{
 
 
    		.sidebar{
-   			padding: 15px calc(15px + 5%) 0px calc(15px + 5%);
+   			padding: 15px 15px 0px 15px;
    		}
 
    		.logo{
@@ -142,7 +162,11 @@ body{
   			li{
   				display: inline;
   				margin-left: 14px;
+
+  				a{
   				font-size: 14px;
+  				font-weight: 600;
+  				}
   			}
   		}
 
