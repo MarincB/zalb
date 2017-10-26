@@ -159,5 +159,20 @@
 }
 
 
+@media all and (max-width: 900px) {
+
+	.project-card{
+		padding: 0 5%;
+	}
+
+   }
+
+@media all and (max-width: 500px) {
+
+	.card-title{
+		display: none;
+	}
+
+   }
 
 
