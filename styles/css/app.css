@@ -1632,7 +1632,7 @@ ul {
       color: #181818;
       text-decoration: line-through; }
     ul li a {
-      color: #cacaca;
+      color: rgba(0, 0, 0, 0.5);
       font-weight: 100;
       -webkit-transition: all 0.4s ease; }
     ul li a:hover {
