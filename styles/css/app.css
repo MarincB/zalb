@@ -1771,6 +1771,9 @@ body {
   .profile-img img {
     width: 100%; }
 
+.skills h3 {
+  margin-bottom: 20px; }
+
 .project-info ul li {
   font-weight: bold; }
 
