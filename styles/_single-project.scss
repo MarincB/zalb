@@ -14,7 +14,7 @@
 
 .single-project-card{
 	box-shadow: 0 5px 100px rgba(0,0,0,.2);
-	padding: 0 100px;
+	padding: 0 5%;
 	max-height: 65vh;
 	overflow-y: hidden;
 }
@@ -37,5 +37,27 @@
 	}
 }
 
+.mobile-row{
+	padding: 5%;
+
+	.mobile{
+		margin: 0 auto;
+	}
+
+}
+
+
+@media all and (max-width: 768px) {
+
+	.mobile-row{
+	padding-bottom: 50px;
+
+	.mobile{
+		margin: 50px auto 0px auto;
+	}
+
+}
+
+   }
 
 
