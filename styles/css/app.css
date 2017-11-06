@@ -1536,6 +1536,9 @@ base::-moz-progress-bar,
 .triglav {
   background: #DD161B; }
 
+.tumblr {
+  background: #36465d; }
+
 .project .meteo:hover > .desktop {
   margin: 0 auto 0 auto;
   box-shadow: 0; }
@@ -1581,11 +1584,25 @@ base::-moz-progress-bar,
   .mobile-row .mobile {
     margin: 0 auto; }
 
+.grid-row {
+  background: #f6f6f6;
+  padding: 5%; }
+  .grid-row img {
+    width: 100%; }
+  .grid-row p {
+    font-size: 14px;
+    color: #8e8e8e; }
+  .grid-row .shadow {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); }
+
 @media all and (max-width: 768px) {
   .mobile-row {
     padding-bottom: 50px; }
     .mobile-row .mobile {
       margin: 50px auto 0px auto; } }
+@media all and (max-width: 544px) {
+  .grid-row .item {
+    margin-top: 40px; } }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Rubik', sans-serif;
   color: #181818; }
