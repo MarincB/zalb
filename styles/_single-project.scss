@@ -15,7 +15,7 @@
 .single-project-card{
 	box-shadow: 0 5px 100px rgba(0,0,0,.2);
 	padding: 0 5%;
-	max-height: 65vh;
+	max-height: 635px;
 	overflow-y: hidden;
 }
 
@@ -47,10 +47,26 @@
 }
 
 
+.grid{
+	box-shadow: 0 5px 100px rgba(0, 0, 0, 0.1);
+	background: #d8d8d8;
+	padding: 5%;
+	margin-bottom: 40px;
+}
+
+.grid:last-child {
+    margin-bottom: 0px;
+}
+
+
+.grid-row:last-child {
+    margin-bottom: 0px;
+}
+
 .grid-row{
-	background: #f6f6f6;
-	padding: 4%;
-	margin-top: 40px;
+
+	margin-bottom: 40px;
+
 
 	img{
 		width: 100%;
@@ -67,12 +83,11 @@
 	}
 
 	h3{
-		font-size: 16px;
+		font-size: 21px;
 		border-bottom: 1px rgba(0,0,0,0.1) solid;
-		padding-bottom: 5px;
-		margin: 0 15px 25px 15px;
+		padding-bottom: 10px;
+		margin: 0 15px 35px 15px;
 	}
-
 }
 
 

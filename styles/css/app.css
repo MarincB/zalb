@@ -1568,7 +1568,7 @@ base::-moz-progress-bar,
 .single-project-card {
   box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
   padding: 0 5%;
-  max-height: 65vh;
+  max-height: 635px;
   overflow-y: hidden; }
 
 .image img {
@@ -1584,10 +1584,20 @@ base::-moz-progress-bar,
   .mobile-row .mobile {
     margin: 0 auto; }
 
+.grid {
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.1);
+  background: #d8d8d8;
+  padding: 5%;
+  margin-bottom: 40px; }
+
+.grid:last-child {
+  margin-bottom: 0px; }
+
+.grid-row:last-child {
+  margin-bottom: 0px; }
+
 .grid-row {
-  background: #f6f6f6;
-  padding: 4%;
-  margin-top: 40px; }
+  margin-bottom: 40px; }
   .grid-row img {
     width: 100%; }
   .grid-row p {
@@ -1596,10 +1606,10 @@ base::-moz-progress-bar,
   .grid-row .shadow {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); }
   .grid-row h3 {
-    font-size: 16px;
+    font-size: 21px;
     border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
-    padding-bottom: 5px;
-    margin: 0 15px 25px 15px; }
+    padding-bottom: 10px;
+    margin: 0 15px 35px 15px; }
 
 @media all and (max-width: 768px) {
   .mobile-row {
@@ -1641,14 +1651,23 @@ h3 {
   font-size: 22px; }
 
 p {
-  font-size: 18px;
+  font-size: 21px;
   max-width: 650px; }
 
+b {
+  font-weight: 700;
+  color: #323232; }
+
 .text {
-  margin: 50px auto 0 auto;
-  max-width: 900px; }
+  margin: 80px auto;
+  max-width: 600px; }
+  .text p {
+    color: #585858;
+    margin-bottom: 20px;
+    font-family: 'Lora', georgia, serif; }
   .text h3 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 32px; }
 
 .caption {
   font-size: 14px;
@@ -1796,6 +1815,9 @@ body {
 
 .skills h3 {
   margin-bottom: 20px; }
+
+.profile p {
+  font-family: 'Lora', georgia, serif; }
 
 .project-info ul li {
   font-weight: bold; }
