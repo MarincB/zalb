@@ -1536,9 +1536,6 @@ base::-moz-progress-bar,
 .triglav {
   background: #DD161B; }
 
-.tumblr {
-  background: #36465d; }
-
 .project .meteo:hover > .desktop {
   margin: 0 auto 0 auto;
   box-shadow: 0; }
@@ -1662,7 +1659,7 @@ b {
   margin: 80px auto;
   max-width: 600px; }
   .text p {
-    color: #585858;
+    color: #484848;
     margin-bottom: 20px;
     font-family: 'Lora', georgia, serif; }
   .text h3 {
@@ -1744,8 +1741,22 @@ body {
 .cocoen {
   border-radius: 4px; }
 
-.hide-desktop {
-  display: none; }
+.tb-link:hover {
+  text-decoration: none; }
+  .tb-link:hover .tumblr {
+    opacity: 1; }
+
+.tumblr {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  opacity: 0.2;
+  -webkit-transition: all 0.3s ease; }
+  .tumblr svg {
+    height: 40px; }
+  .tumblr h3 {
+    line-height: 40px;
+    margin-left: 10px; }
 
 @media all and (min-width: 1650px) {
   .container {

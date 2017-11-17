@@ -65,11 +65,33 @@ body{
 	border-radius: 4px;
 }
 
+.tb-link:hover{
+	text-decoration: none;
 
-.hide-desktop{
-	display: none;
-
+	.tumblr{
+		opacity: 1;
+	}
 }
+
+.tumblr{
+
+	display: flex;
+  	flex-direction: row;
+  	width: 320px;
+  	opacity: 0.2;
+  	-webkit-transition: all 0.3s ease;
+
+	svg{
+		height: 40px;
+		
+	}
+
+	h3{
+		line-height: 40px;
+		margin-left: 10px;
+	}
+}
+
 
 @media all and (min-width: 1650px) {
 
