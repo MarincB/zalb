@@ -80,6 +80,7 @@ body{
   	width: 320px;
   	opacity: 0.2;
   	-webkit-transition: all 0.3s ease;
+  	margin: 0 auto;
 
 	svg{
 		height: 40px;
@@ -138,7 +139,7 @@ body{
   		width: 100%;
   		position: fixed;
   		z-index:100;
-		padding: 15px calc(15px + 5%);
+		padding: 15px 5%;
 		top:0px;
 		background: rgba(254, 254, 254,.98);
 		height: auto;
