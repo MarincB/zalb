@@ -28,13 +28,6 @@ body{
 	opacity: 1;
 }
 
-.project-info{
-	margin-top: 20px;
-
-	p {
-		font-size: 14px;
-	}
-}
 
 .logo {
 	margin-bottom: 80px;
@@ -53,6 +46,7 @@ body{
 	svg{
 		margin-right: 10px;
 		margin-bottom: -5px;
+		fill:#e8e8e8;
 		-webkit-transition: all 0.5s ease;
 	}
 

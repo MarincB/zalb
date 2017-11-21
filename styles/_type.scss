@@ -47,6 +47,22 @@ b {
 	color: #323232;
 }
 
+.project-info:hover{
+
+	h3{
+		text-decoration: underline;
+	}
+}
+
+.project-info{
+	margin-top: 20px;
+
+	p {
+		font-size: 14px;
+		color: #333;
+	}
+}
+
 .text{
 	margin: 80px 0px;
 	/*max-width: 600px;*/
@@ -90,31 +106,49 @@ b {
 	margin-bottom: 40px;
 }
 
-ul {
+.sidebar{
 
-	padding: 0;
+	ul {
 
-	li{
-		list-style: none;
-		line-height: 2.5rem;
-		font-size: 18px;
+		padding: 0;
 
-		.active{
-			color: #181818;
-			text-decoration: line-through;
+		li{
+			list-style: none;
+			line-height: 2.5rem;
+			font-size: 18px;
+
+			.active{
+				color: #181818;
+				text-decoration: line-through;
+			}
+
+			a {
+				color:rgba(0,0,0,.5);
+				font-weight: 100;
+				-webkit-transition: all 0.4s ease;
+
+					img{
+					opacity: 0.5;
+					height: 8px;
+					margin-left: 4px;
+					-webkit-transition: all 0.4s ease;
+				}
+
+			}
+
+			a:hover {
+				color:#181818;
+				text-decoration: none;
+
+				img{
+					opacity: 0.95;
+					transform: scale(1.2);
+
+				}
+			}
 		}
+}
 
-		a {
-			color:rgba(0,0,0,.5);
-			font-weight: 100;
-			-webkit-transition: all 0.4s ease;
-		}
-
-		a:hover {
-			color:#181818;
-			text-decoration: none;
-		}
-	}
 }
 
 
