@@ -180,7 +180,42 @@
 
 	.card-title{
 		display: none;
+
 	}
+
+	.tumblr{
+		margin:0 auto 10px auto;
+	}
+
+	.sidebar{
+	   		padding: 15px 15px 0px 15px;
+	   		
+
+	   		.logo{
+	   			height: 30px;
+	   		}
+
+	   		ul{
+	  			display: inline-block;
+	  			margin:-5px 0 10px 0px;
+	  			float:right;
+
+	  			li{
+	  				display: inline;
+	  				margin-left: 10px;
+
+	  				span{
+	  					display: none;
+	  				}
+
+	  				a{
+	  				font-size: 12px;
+	  				font-weight: 600;
+	  				}
+	  			}
+	  		}
+
+  		}
 
    }
 

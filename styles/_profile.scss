@@ -52,6 +52,16 @@
 				font-size: 18px;
 				line-height: 34px;
 
+				a {
+					color:rgba(0,0,0,.5);
+					-webkit-transition: all 0.4s ease;
+				}
+
+				a:hover {
+					text-decoration: none;
+					color: #181818;
+				}
+
 				
 			}
 		}

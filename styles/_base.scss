@@ -168,28 +168,30 @@ body{
 		}
 
 
-   		.sidebar{
-   			padding: 15px 15px 0px 15px;
-   		}
+	   	.sidebar{
+	   			padding: 15px 15px 0px 15px;
+	   		
 
-   		.logo{
-   			height: 30px;
-   		}
+	   		.logo{
+	   			height: 30px;
+	   		}
 
-   		ul{
-  			display: inline-block;
-  			margin:0 0 10px 0px;
-  			float:right;
+	   		ul{
+	  			display: inline-block;
+	  			margin:0 0 10px 0px;
+	  			float:right;
 
-  			li{
-  				display: inline;
-  				margin-left: 14px;
+	  			li{
+	  				display: inline;
+	  				margin-left: 10px;
 
-  				a{
-  				font-size: 14px;
-  				font-weight: 600;
-  				}
-  			}
+	  				a{
+	  				font-size: 14px;
+	  				font-weight: 600;
+	  				}
+	  			}
+	  		}
+
   		}
 
    }
