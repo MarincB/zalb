@@ -139,8 +139,26 @@
 	background: #DD161B;
 }
 
+.coinrhythm{
+	background: #20252B;
+}
+
+.bitstamp{
+	background: #159e49;
+}
+
 
 .project{
+
+	.coinrhythm:hover > .desktop{
+	margin: 0 auto 0 auto;
+	box-shadow: 0 
+	}
+
+	.bitstamp:hover > .desktop{
+	margin: 0 auto 0 auto;
+	box-shadow: 0 
+	}
 
 	.meteo:hover > .desktop{
 	margin: 0 auto 0 auto;
