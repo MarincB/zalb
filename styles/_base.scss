@@ -56,6 +56,10 @@ body{
 	}
 }
 
+.minus-padding-right{
+	padding-right:0px; 
+}
+
 .cocoen{
 	border-radius: 4px;
 }
@@ -166,6 +170,11 @@ body{
 		.hide-mobile{
 		display:none; 
 		}
+
+		.minus-padding-right{
+	padding-right:15px; 
+	padding-bottom: 25px;
+}
 
 
 	   	.sidebar{
